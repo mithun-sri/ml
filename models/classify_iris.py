@@ -9,20 +9,6 @@ from sklearn import datasets
 from sklearn.model_selection import train_test_split
 import mglearn
 
-print("Python version: {}".format(sys.version))
-
-print("pandas version: {}".format(pd.__version__))
-
-print("matplotlib version: {}".format(matplotlib.__version__))
-
-print("NumPy version: {}".format(np.__version__))
-
-print("SciPy version: {}".format(sp.__version__))
-
-print("IPython version: {}".format(IPython.__version__))
-
-print("scikit-learn version: {}".format(sklearn.__version__))
-
 if __name__ == "__main__":
     iris_dataset = datasets.load_iris()
     X_train, X_test, y_train, y_test = train_test_split(iris_dataset['data'], iris_dataset['target'], random_state=0)
